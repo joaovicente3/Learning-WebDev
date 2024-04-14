@@ -1,0 +1,101 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 1px;
+    text-align: left;
+}
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#section1 {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center; /* Center the containers horizontally */
+    align-items: flex-start; /* Align items to the start of the flex container (top) */
+}
+
+.left-container {
+    flex: 0 0 20%; /* Left container occupies 40% of the width */
+    text-align: left; /* Align text to the left */
+    margin-right: 20px; /* Adjust margin to push the left container farther from the left margin */
+}
+
+.right-container {
+    flex: 0 0 20%; /* Right container occupies 40% of the width */
+    display: flex; /* Enable flexbox */
+    justify-content: flex-start; /* Align content to the left */
+}
+
+.right-container img {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    max-height: 100%; /* Ensure image does not exceed container height */
+    display: block; /* Ensure proper centering */
+    margin-right: auto; /* Align the image to the left */
+}
+
+.button-container {
+    margin-top: 10px; /* Add space between paragraph and button */
+}
+
+.sign-in-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 100%; /* Set the height to 100% to match the image height */
+}
+
+
+#section1 .section-header {
+    color: whitesmoke; /* Change the color of the header in section 1 */
+    font-size: 48px; /* Change the font size of the header in section 1 */
+    margin-top: 0; /* Ensure the header starts at the top of its container */
+}
+
+#section2 .section2-header {
+    color: black; /* Change the color of the header in section 1 */
+    font-size: 20px; /* Change the font size of the header in section 1 */
+    margin-top: 0; /* Ensure the header starts at the top of its container */
+}
+
+.squares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    font-size: 13px;
+    line-height: .6;
+  }
+  
+.square {
+    width: 120px;
+    height: 120px;
+    border: 3px solid blue;
+    border-radius: 10px;
+    margin: 10px; /* Add some margin to create space between squares */
+}
+
+footer {
+    background-color: #1f2937;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
