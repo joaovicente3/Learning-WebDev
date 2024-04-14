@@ -13,9 +13,9 @@ function createGrid(x) {
         container.appendChild(div);
 
         div.addEventListener('mouseenter', function() {
-            div.style.backgroundColor = 'lightgray';
+            div.style.backgroundColor = 'black';
             if (previousHoveredItem) {
-                previousHoveredItem.style.backgroundColor = 'lightgray';
+                previousHoveredItem.style.backgroundColor = 'black';
             }
             previousHoveredItem = div;
         });
@@ -24,8 +24,8 @@ function createGrid(x) {
 
 function handleButtonClick() {
     let x = parseInt(prompt('Enter the number of squares per side (maximum 30):'));
-    if (isNaN(x) || x < 1 || x > 30) {
-        alert('Please enter a valid number between 1 and 30.');
+    if (isNaN(x) || x < 1 || x > 45) {
+        alert('Please enter a valid number between 1 and 45.');
         return;
     }
     createGrid(x); 
@@ -33,7 +33,7 @@ function handleButtonClick() {
 
 
 window.onload = function() {
-    createGrid(16); 
+    createGrid(40); 
     const button = document.getElementById('btn');
     button.addEventListener('click', handleButtonClick);
 }
